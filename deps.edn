@@ -1,0 +1,17 @@
+{:paths ["src" "resources"]
+ :deps  {org.clojure/clojure {:mvn/version "1.11.1"}}
+
+ :exoscale.project/lib          org.spootnik/deps-proto
+ :exoscale.project/version-file "VERSION"
+
+ :aliases
+ {:project
+  {:ns-default exoscale.tools.project.module
+   :extra-deps {io.github.exoscale/tools.project
+                {:git/sha "b94e2945dbf6940b325ed4d86ec2cae6091944a4"}}}
+  :test
+  {:extra-deps            {lambdaisland/kaocha           {:mvn/version "1.66.1034"}
+                           lambdaisland/kaocha-junit-xml {:mvn/version "0.0.76"}}
+   :extra-paths           ["test" "test/resources"]
+   :exec-fn               kaocha.runner/exec-fn
+   :exoscale.deps/inherit :all}}}
