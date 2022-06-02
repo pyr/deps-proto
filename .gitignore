@@ -26,3 +26,4 @@
 /classes
 /target
 **/resources/git-version
+.clj-kondo/.cache
