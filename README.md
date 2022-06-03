@@ -41,7 +41,7 @@ Supported options:
 - `:protoc-bin`: path to the protoc binary, defaults to `"protoc"`
 - `:proto-files`: A collection of protobuf files to generate code from. Defaults to
   all protobuf files found in the source path.
-  
+
 ### `compile-java`
 
 Compiles the generated source
@@ -54,7 +54,7 @@ Supported options:
 - `:classes-path`: where to store compiled java classes, defaults to `"target/classes"`
 - `:generate-path`: where to store generated java files, defaults to `"target/java"`
 
-### `generate-and-comile`
+### `generate-and-compile`
 
 Generates java code from protobuf files and compiles the generated source.
 
@@ -69,10 +69,3 @@ Supported options:
 - `:protoc-bin`: path to the protoc binary, defaults to `"protoc"`
 - `:proto-files`: A collection of protobuf files to generate code from. Defaults to
   all protobuf files found in the source path.
-
-
-
-
-
-
-
